@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-x: hidden;
+    text-transform: capitalize;
+}
+
+:root{
+    --main-color:rgb(247, 78, 20);
+
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+}
+.heading .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.heading .logo i{
+    margin: 5px;
+    font-size: 23px;
+    color: var(--main-color);
+}
+
+.heading .logo h4{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.heading .call{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.heading .call i{
+    margin: 7px;
+    
+}
+
+.heading .call h4{
+    font-weight: 500;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    align-items: center;
+    height: 45px;
+  
+   
+}
+.navbar nav ul{
+    display: flex;
+   margin-left: 7px;
+   overflow-y: hidden;
+}
+.navbar nav ul li a{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.navbar nav ul li:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.navbar nav ul li a:hover{
+    
+    color: black;
+}
+.navbar .media{
+    display: none;
+}
+
+.navbar .icons{
+    margin-right: 15px;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+.navbar .icons i:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    color: black;
+}
+
+.navbar .icons i{
+    margin: 10px;
+    font-size: 19px;
+    color: white;
+}
+
+.home{
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+}
+
+.home .head {
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+   
+}
+
+.home .head h1{
+    color: white;
+    font-size: 65px;
+    font-weight: 400;
+}
+
+
+span{
+    color: var(--main-color);
+}
+.home .head p{
+    color: rgb(215, 210, 210);
+    margin-top: 25px;
+    font-size: 20px;
+
+}
+.btn{
+    margin: 0;
+    margin-top: 30px;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: linear-gradient(60deg,rgb(247, 78, 20), rgb(255, 255, 255), rgb(22, 22, 69), rgb(182, 19, 19));
+    background-size: 500% 500%;
+    animation: animeBG 4s ease infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+    overflow-y: hidden;
+    border: none;
+    color: white;
+}
+.btn:hover{
+    transform: scale(1.02);
+    transition: .3s;
+}
+@keyframes animeBG{
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.about{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.about .img{
+    width: 40%;
+    z-index: 1000;
+   
+}
+.about .img img{
+   
+    height: 600px;
+    margin-left: 100px;
+    
+   
+}
+.about .text{
+    margin-left: 30px;
+    width: 100%;
+   
+
+}
+.about .text h3{
+    font-size: 40px;
+   margin-bottom: 20px;
+    color: var(--main-color);
+
+}
+
+.about .text p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.baslik{
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: 2px solid var(--main-color);
+    
+}
+.baslik h2{
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+.dishes{
+    margin-top: 50px;
+    padding: 2% 7%;
+}
+.dishes .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dishes .row .col-4{
+ border: 1px ;
+ margin: 17px;
+ padding: 10px 10px;
+ box-shadow: 2px 6px 5px 0px rgba(144, 143, 143, 0.75);
+ 
+}
+
+.dishes .row .col-4 img{
+  width: 100%;
+  height: 250px;
+  
+  
+}
+.dishes .row .col-4 p{
+    align-items: center;
+    font-size: 19px;
+    margin-top: 2px;
+    color: rgb(76, 76, 76);
+}
+
+.dishes .row .col-4:hover{
+    transform: scale(1.03);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.dishes .baslik{
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+
+.dishes .menu ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+.dishes .menu ul li {
+    margin: 18px;
+    font-size: 22px;
+    border-bottom: 3px solid black;
+}
+.dishes .menu ul li:hover{
+    transform: scale(1.03);
+    transition: .3s;
+    cursor: pointer;
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* .row .btn{
+   
+    background: linear-gradient(60deg,rgb(140, 138, 137), green, rgb(213, 159, 206), rgb(182, 19, 19));
+    background-size: 500% 500%;
+    animation: animeBG 4s ease infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 170px;
+    font-size: 15px;
+    padding: 10px 20px;
+    
+
+} */
+
+.chefs{
+    background-image: url(img/chefs-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 2% 7%;
+    text-align: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+
+.box{
+    border: 5px solid var(--main-color);
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+}
+.chefs .img{
+    width: 100%;
+}
+.chefs .icons p{
+    color: gray;
+}
+.chefs .icons h2{
+    font-weight: 400;
+}
+.chefs .img img{
+    width: 100%;
+    border-bottom: 35px solid var(--main-color);
+}
+.chefs .icons{
+    position: absolute;
+    bottom: -9%; left: 0;
+    height:auto;
+    width: 100%;
+    background: white;
+    z-index: 1001;
+    text-align: center;
+    border-top: 5px solid var(--main-color);
+    overflow: hidden;
+    
+}
+.chefs .icons i{
+    margin-top: 20px;
+    color: var(--main-color);
+    margin: 7px;
+}
+
+.box:hover .icons{
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    padding: 10px 0;
+    transition: .2s;
+}
+.chefs .baslik{
+
+    color: var(--main-color);
+    font-size: 35px;
+   
+
+}
+
+.speciality{
+    align-items: center;
+    padding: 1% 7%;
+    height:auto;
+}
+.speciality .baslik{
+    color: var(--main-color);
+    font-size: 35px;
+}
+
+.speciality .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.speciality .row .col-6{
+    margin: 10px;
+    margin-bottom: 0px;
+    
+}
+.speciality .row .iki{
+    position: relative;
+    bottom: 230px;
+}
+.speciality .row .uc{
+    position: relative;
+    bottom: 230px;
+}
+.speciality .row .col-6 img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.speciality .row .col-6 h2{
+    position: relative;
+    bottom: 180px;
+    left: 30px;
+    color: white;
+}
+.speciality .row .col-6 p{
+ position: relative;
+ bottom: 170px;
+ left: 31px;
+ color: white;
+}
+.speciality .row .col-6 .btn{
+    position: relative;
+    bottom: 170px;
+    left: 30px;
+    padding: 10px 50px;
+}
+
+/* .speciality .row .col-6 .images{
+    position: absolute;
+    height: 55%;
+    width: 45%;
+
+}
+.speciality .row .col-6 .images .texts{
+    position: absolute;
+    top: 15%; left: 20px;
+    bottom: 20px;
+    color:white ;
+    z-index: 1001;
+} */
+
+.road {
+    position: relative;
+    bottom: 380px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    min-height: 200px;
+    
+}
+.road .icon{
+    margin: 10px;
+
+}
+.road .icon i{
+    font-size: 45px;
+    color: var(--main-color);
+}
+
+.road .icon h2{
+    margin-top: 10px;
+    font-weight: 400;
+}
+.road .icon p{
+    margin-top: 12px;
+    color: rgb(88, 88, 88);
+}
+
+.order{
+    background-image: url(img/order-bg.jpg);
+    position: relative;
+    bottom: 250px;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 10% 15%;
+    overflow: hidden;
+    
+}
+.order .baslik{
+    color: white;
+    font-size: 35px;
+}
+.order .container{
+    display: flex;
+    flex-wrap: wrap;
+   
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.order .container form{
+    margin-top: 20px;
+    width: 100%;
+}
+.order .container .ilk input{
+ width: 500px;
+ height: 35px;
+ font-size: 19px;
+ 
+ margin: 10px;
+ font-weight: 300;
+}
+
+.order .container .iki input{
+    width: 500px;
+    font-weight: 300;
+    height: 35px;
+    font-size: 19px;
+    margin-top: 10px;
+    margin: 10px;
+   }
+   .order .container .ucc {
+   height: auto;
+   font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 19px;
+    margin-top: 10px;
+    
+   }
+
+   .order .container .ucc .textss input{
+    width: 500px;
+    height: 250px;
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 19px;
+   }
+
+   .order .container .ucc .if{
+    margin-left: 15px;
+    margin-top: 10px;
+   }
+
+
+   footer{
+    height: 230px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(2, 2, 2);
+}
+
+.footer i{
+    margin: 10px;
+    font-size: 30px;
+    border: 0.2px none ;
+    border-radius: 50%;
+    padding: 15px;
+    background: linear-gradient(600deg,rgb(211, 211, 222), rgb(200, 170, 170), rgb(35, 32, 78),rgb(7, 237, 183),white);
+    animation: animeBG 3s ease infinite;
+    animation-direction: alternate;
+    background-size: 500% 500%;
+    margin-top: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    
+}
+
+.footer i:hover{
+    transform: scale(1.07);
+    transition: .3s;
+}
+.footer h2{
+    margin-top: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.footer h3{
+    font-size: 30px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 568px){
+    .navbar nav ul{
+        display: none;
+    }
+    .media{
+        margin-left: 20px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .about .img{
+        display: none;
+    }
+    .about .text{
+        padding: 5px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .chefs .box {
+        margin-left: 27px;
+        
+       
+    }
+    
+    .order .container .ilk input{
+        width: 250px;
+    }
+    .order .container .iki input{
+        width: 250px;
+    }
+    .order .container .ucc .textss input{
+        width: 250px;
+        position: relative;
+        right: 10px;
+    }
+    .order .container .ucc .if{
+        width: 250px;
+    }
+}
+
+
